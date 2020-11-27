@@ -1,13 +1,25 @@
 body {
-    background-image: url(Sources/flyer.jpg) no-repeat center center fixed;
-    background-size: cover;
-    background-size: cover;
-    background-size: cover;
-    background-size: cover;
+      background-color: #f9f9f9;
+      font-family: "Roboto", sans-serif;
+      color: #3e3e3e;
+      margin: 0;
+      padding: .5rem .8rem;
 }
 
+.container {
+      display: grid;
+      grid-gap: 8px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: minmax(auto, auto);
+}
+
+.container > * { border-radius: 3px; padding: .2rem .8rem; }
+
+header, main, footer { grid-column: 1 / 13; }
+
+
 header {
-      margin: 0;
+      margin: 10;
       text-align: center;
       font-size: 24px;
       letter-spacing: 0.8px;
@@ -15,14 +27,17 @@ header {
 
 header > * {
       align-self: center;
-      padding-top: 2px;
+      padding-top: 15px;
 }
 
 main > * {
       text-align: center;
 }
 
+
 #contact {
+      text-align: center;
+      padding-top: 35px;
       align-self: center;
       opacity: .8;
       justify-self: center;
