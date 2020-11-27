@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Game night!</title>
+      	<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+      <div class="container">
+            <header>
+                  <p>November 26th</p>
+                  <p1>At 6 P.M.</p1>
+            </header>
+
+            <main>
+                  <h3>CSU Fullerton's Premier Gaming Club!</h3>
+                  <h4>Free entrance for military students</h4>
+                  <h5>No smoking & No alcohol allowed</h5>
+                  <div>
+                        <p>15$ TICKET</p>
+                  </div>
+                  
+                  <div>
+                        <p>FREE DRINKS</p>
+                  </div>
+
+                  <p>Created By Dan Ngo for CPSC311-03</p>
+
+            </main>
+
+            <a href="https://dngo94.github.io/Personal-Project-Create-a-Website-with-Github/" id="contact" target="_blank">Click here for more info</a>
+      </div>
+
+</body>
+</html>
