@@ -1,9 +1,19 @@
 body {
-      background-color: #f9f9f9;
+     
       font-family: "Roboto", sans-serif;
       color: #3e3e3e;
       margin: 0;
       padding: .5rem .8rem;
+       background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR42jSjHWJVB671E4dTVQ5UTcCtn5Sg0ozsyw&usqp=CAU) no-repeat center center fixed;
+      background-size: cover;
+      background-size: cover;
+      background-size: cover;
+      background-size: cover;
+}
+
+
+img {
+      max-width: 100%;
 }
 
 .container {
@@ -17,27 +27,83 @@ body {
 
 header, main, footer { grid-column: 1 / 13; }
 
-
 header {
-      margin: 10;
-      text-align: center;
-      font-size: 24px;
-      letter-spacing: 0.8px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      box-shadow: 1px 2px 4px rgba(0,0,0,.26);
+      color: #f3f3f3;
+      background-color: #564e4e;
 }
 
 header > * {
       align-self: center;
-      padding-top: 15px;
+      padding-top: 2px;
+}
+
+header p {
+        text-align: center;
+      grid-column: 2 / 13;
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 0.2px;
+}
+
+header img {
+      width: 60px;
+}
+
+main {
+      display: grid;
+      padding: 0;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4px;
+      text-shadow: 0.4px 0.4px 0.8px rgba(0,0,0,.2);
 }
 
 main > * {
+        color: #f8f6f8;
       text-align: center;
 }
 
+main h2 {
+        color: #f8f6f8;
+      font-weight: 200;
+      margin: 2rem 0;
+      grid-column: 1 / 3;
+}
+
+#invite {
+      background-color: rgba(39, 39, 39, 0.699);
+      padding: .4rem;
+      line-height: 1.7rem;
+      color: #f8f6f8;
+      margin-top: 1.4rem;
+      font-size: 17px;
+      grid-column: 1 / 3 ;
+}
+
+.ticket {
+      position: relative;
+      display: inline-block;
+}
+
+.ticket img {
+      box-shadow: 2px 4px 6px rgba(0,0,0,.26);
+}
+
+#agree {
+      grid-column: 1 / 3;
+}
+
+#end {
+      color: tomato;
+}
+
+time {
+      color: dodgerblue;
+}
 
 #contact {
-      text-align: center;
-      padding-top: 35px;
       align-self: center;
       opacity: .8;
       justify-self: center;
@@ -53,4 +119,36 @@ main > * {
 
 #contact:hover {
       opacity: 1;
+}
+
+
+@media (max-width: 992px) {
+      main div {
+            grid-column: 1 / 3;
+      }
+
+      main h2 {
+            font-size: 2rem;
+            margin: 1.6rem 0;
+      }
+
+      header p {
+            padding-left: 1.2rem;
+      }
+}
+
+@media (max-width: 576px) {
+      header img {
+            grid-column: 1 / 3;
+      }
+
+      header p {
+            grid-column: 3 / 13;
+            font-size: 1rem;
+            padding-left: .5rem;
+      }
+
+      main h2 {
+            font-size: 1.4em;
+      }
 }
