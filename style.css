@@ -24,7 +24,7 @@ header, main, footer { grid-column: 1 / 13; }
 header {
       margin: 10;
       align-self: center;
-      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./Sources/header.png);
+      background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(./Sources/header.png);
       height: 100vh;
       min-height: 500px;
       max-width: 100%;
@@ -42,14 +42,6 @@ header .header-text {
       font-size: 50px;
       letter-spacing: 0.8px; 
       font-size: 3vw;
-}
-
-h1 {
-      background-color: black;
-}
-
-p {
-      background-color: black;
 }
 
 main > * {
