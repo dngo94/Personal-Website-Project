@@ -44,6 +44,14 @@ header .header-text {
       font-size: 3vw;
 }
 
+h1 {
+      background-color: black;
+}
+
+p {
+      background-color: black;
+}
+
 main > * {
       text-align: center;
       color: white;
