@@ -1,19 +1,13 @@
+html {
+  scroll-behavior: smooth;
+ }
+ 
 body {
-     
-      font-family: "Roboto", sans-serif;
+      background-color: #000000;
+      font-family: "Lucida Console", Courier, monospace;
       color: #3e3e3e;
       margin: 0;
       padding: .5rem .8rem;
-       background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR42jSjHWJVB671E4dTVQ5UTcCtn5Sg0ozsyw&usqp=CAU) no-repeat center center fixed;
-      background-size: cover;
-      background-size: cover;
-      background-size: cover;
-      background-size: cover;
-}
-
-
-img {
-      max-width: 100%;
 }
 
 .container {
@@ -28,127 +22,126 @@ img {
 header, main, footer { grid-column: 1 / 13; }
 
 header {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      box-shadow: 1px 2px 4px rgba(0,0,0,.26);
-      color: #f3f3f3;
-      background-color: #564e4e;
-}
-
-header > * {
+      margin: 10;
       align-self: center;
-      padding-top: 2px;
+      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://www.history.com/.image/t_share/MTU4NTE1Nzg2MDcwMTA3Mzk0/beer-oldest.jpg);
+      height: 100vh;
+      min-height: 500px;
+      max-width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;  
 }
 
-header p {
-        text-align: center;
-      grid-column: 2 / 13;
-      margin: 0;
+header .header-text {
+      padding-top: 115px;
+      text-align: center;
+      color: white;
       font-size: 24px;
-      letter-spacing: 0.2px;
-}
-
-header img {
-      width: 60px;
-}
-
-main {
-      display: grid;
-      padding: 0;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 4px;
-      text-shadow: 0.4px 0.4px 0.8px rgba(0,0,0,.2);
+      letter-spacing: 0.8px; 
 }
 
 main > * {
-        color: #f8f6f8;
       text-align: center;
+      color: white;
 }
-
-main h2 {
-        color: #f8f6f8;
-      font-weight: 200;
-      margin: 2rem 0;
-      grid-column: 1 / 3;
-}
-
-#invite {
+#highlight {
+      border-radius: 8px;
       background-color: rgba(39, 39, 39, 0.699);
       padding: .4rem;
       line-height: 1.7rem;
-      color: #f8f6f8;
+      color: #f8f8f8;
       margin-top: 1.4rem;
       font-size: 17px;
       grid-column: 1 / 3 ;
 }
 
-.ticket {
+.project {
       position: relative;
       display: inline-block;
 }
 
-.ticket img {
+.project img {
+      border-radius: 8px;
       box-shadow: 2px 4px 6px rgba(0,0,0,.26);
+      max-width: 100%;
 }
 
-#agree {
-      grid-column: 1 / 3;
+.project span {
+      position: absolute;
+      color: #fefefe;
+      text-transform: uppercase;
+      text-shadow: 0.4px 0.4px 0.6px rgba(255, 255, 255, .3);
+      letter-spacing: 0.6px;
+      font-size: 14px;
+      bottom: 20px;
+      right: 26px;
 }
 
-#end {
-      color: tomato;
+
+.project #button {
+      display: none;
+      color: white;
+      border: 2px solid white;
+      text-align: center;
+      position: absolute;
+      align-self: center;
+      justify-self: center;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      top: 50%;
+      left: 50%;
+      margin-left: -40px;
+      z-index: 2;
+      width: 80px;
+
+
 }
 
-time {
-      color: dodgerblue;
+img:hover + #button, #button:hover {
+      display: inline-block;
+
+}
+
+#button:hover {
+      background: linear-gradient(to right, black 50%, white 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all .5s ease-out;
+      color: black;
+
+}
+
+img:hover {
+      opacity: 0.5;
+      transition: background 300ms ease-in-out;
+
 }
 
 #contact {
-      align-self: center;
-      opacity: .8;
-      justify-self: center;
+      width: 70px;
       grid-column: 1 / 13;
+      text-align: center;
+      justify-self: center;
+      opacity: .8;
       font-size: 14px;
-      background-color: rgb(24, 128, 231);
-      color: #f3f3f3;
+      color: #FFFAF0;
       border-radius: 4px;
       text-decoration: none;
       cursor: pointer;
-      transition: .25s ease;
+      background-color: rgb(100, 149, 237);
+      background-image:linear-gradient(120deg, #87CEFA  50%, transparent 50%);
+      background-image:linear-gradient(120deg, #87CEFA 50%, transparent 50%);
+      background-image:linear-gradient(120deg, #87CEFA 50%, transparent 50%);
+      background-image:linear-gradient(210deg, #87CEFA 50%, transparent 50%);
+      background-size: 500px;
+      background-repeat: no-repeat;
+      background-position: 0%;
+      transition: background 300ms ease-in-out;
 }
 
 #contact:hover {
-      opacity: 1;
-}
-
-
-@media (max-width: 992px) {
-      main div {
-            grid-column: 1 / 3;
-      }
-
-      main h2 {
-            font-size: 2rem;
-            margin: 1.6rem 0;
-      }
-
-      header p {
-            padding-left: 1.2rem;
-      }
-}
-
-@media (max-width: 576px) {
-      header img {
-            grid-column: 1 / 3;
-      }
-
-      header p {
-            grid-column: 3 / 13;
-            font-size: 1rem;
-            padding-left: .5rem;
-      }
-
-      main h2 {
-            font-size: 1.4em;
-      }
+    background-position: 100%;
+    color: #000000;
 }
