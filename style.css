@@ -24,7 +24,7 @@ header, main, footer { grid-column: 1 / 13; }
 header {
       margin: 10;
       align-self: center;
-      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('Sources/header.png');
+      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../Sources/header.png");
       height: 100vh;
       min-height: 500px;
       max-width: 100%;
